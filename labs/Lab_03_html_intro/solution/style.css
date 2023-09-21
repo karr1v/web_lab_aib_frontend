@@ -8,16 +8,16 @@ body {
   align-items: center;
   height: 100%;
   margin: 0;
-  background-color: #000000;
+  background-color: Plum;
 }
 
 button {
   border: 1px solid #000;
   padding: 25px 50px;
-  color: white;
+  color: Lavender;
   font-weight: 900;
   font-size: 30px;
   text-transform: uppercase;
-  background-color: black;
+  background-color: MediumOrchid;
   cursor: pointer;
 }
