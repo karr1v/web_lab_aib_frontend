@@ -1,0 +1,47 @@
+h1 {
+    color: SandyBrown;
+    font-size: 31px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-family: "William", serif;
+    margin-bottom: 0;
+    padding-top: 45px;
+    font-weight: normal;
+
+}
+h2{
+    color: white;
+    font-size: 31 px;
+    font-family: "Inter", sans-serif;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+h3{
+    font-family: "Inter", sans-serif;
+    font-size: 16 px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 18px;
+    font-weight: normal;
+    margin: 0;
+}
+p{
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    margin: 0;
+}
+body{
+    min-wight: 850px;
+}
+img{
+    width: 210px;
+    margin-bottom: 80px;
+}
+div{
+    text-align: center;
+    background-color: #FFEE4F;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    margin: 0 auto 20px;
+}
