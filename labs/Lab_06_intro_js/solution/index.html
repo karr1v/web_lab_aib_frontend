@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>JS</title>
+</head>
+<body>
+
+<script>
+    console.log("---1---");
+    let apple = 10;
+    alert(apple);
+    console.log(apple)
+    let possibleConditions = ["супер", "огонь", "фигня", "так себе", "ну в принципе норм"];
+    let randomIndex = Math.floor(Math.random() * possibleConditions.length);
+    let condition = possibleConditions[randomIndex];
+    console.log("Сегодняшний день будет "+ condition);
+    console.log("---2---");
+    let int = 42;
+    let str = '100';
+    let bool = true;
+
+    console.log("Целое число + Строка:", int + str);
+    console.log("Целое число + Булево:", int + bool);
+    console.log("Строка + Булево:", str + bool);
+
+    console.log("Строка + Целое число:", str + int);
+    console.log("Булево + Целое число:", bool + int);
+    console.log("Булево + Строка:", bool + str);
+
+    console.log("---3---");
+    let myArray = [];
+    for(let i=0; i<10; i++) {
+        myArray.push(Math.floor(Math.random() * 11) - 5);
+    }
+
+    console.log("Исходный массив:", myArray);
+
+    let filteredArray = myArray.filter(num => num >= 0);
+    console.log("Массив после фильтрации:", filteredArray);
+    console.log("---4---");
+
+    function getRand(){
+    return Math.random();
+    }
+    let a = getRand();
+    console.log(a);
+
+    let i=10;
+    let arrInt = [];
+    function arrint(myArray, i){
+        myArray = myArray.map(element =>{return element * i;})
+        return myArray;
+    }
+    console.log(arrint(myArray,i));
+
+    const generateRandomWord = () => {
+      const alphabet = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя';
+      let word = '';
+
+      for (let i = 0; i < 7; i++) {
+        const randomletter = Math.floor(Math.random() * alphabet.length);
+        word += alphabet[randomletter];
+      }
+      return word;
+    }
+    console.log(generateRandomWord());
+
+    console.log("---5---");
+    const person = {};
+    person.firstName = 'Сергей';
+    person.surname = 'Сергеев';
+    person.patronymic = 'Сергеевич';
+    person.birthday = '12.12.2001';
+    person.hobby = 'Программист';
+    person.group = 'А';
+
+    person.getInfo = function() {
+      const currentYear = new Date().getFullYear();
+      const birthYear = parseInt(this.birthday.split('.')[2]);
+      const age = currentYear - birthYear;
+
+      return `ФИО: ${this.surname} ${this.firstName} ${this.patronymic}\nГод рождения: ${birthYear}\nХобби: ${this.hobby}\nВозраст: ${age}`;
+    };
+
+    alert(person.getInfo());
+
+    const salaries = {
+      Шило: 60000,
+      Чиннов: 40000,
+      Цыгикало: 85000,
+      Иванюк: 35000,
+      Бреус: 80000,
+      Чигипов: 7000,
+      Подберёзко: 60000,
+      Тищенко: 70000,
+      Шапков: 45000,
+      Амелякина: 50000
+    };
+
+    let totalSalary = 0;
+    for (let key in salaries) {
+      totalSalary += salaries[key];
+    }
+
+    console.log('Общая зп сотрудников:', totalSalary);
+
+</script>
+<!--
+Вопросы 
+- Через какой оператор Вы объявили переменую? Ответ: let, var же устаревший типа
+- Какие доступны операторы для объявления переменных? В чём их отличия? Ответ: Есть let, а есть var. Переменные, объявленные с помощью var, имеют функциональную область видимости или глобальную область видимости, если они объявлены вне любой функции. Однако, переменные, объявленные с помощью var, не имеют блочной области видимости. Переменные, объявленные с помощью let, ограничены областью видимости блока, в котором объявлены.
+- Что происходит при вызове alert()? Ответ: В браузере отображается диалоговое окно с сообщением, переданным в качестве аргумента.
+- Как Вы думаете для чего может использоваться console.log() Ответ: Это удобный способ отслеживания значений переменных или выполнения определенных действий во время разработки и отладки JavaScript-приложений.
+-->
+</body>
+</html>
