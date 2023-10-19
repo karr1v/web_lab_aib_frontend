@@ -90,7 +90,7 @@
         object-fit: cover;
     }
 
-@media screen and (max-width: 328px) {
+@media screen and (max-width: 320px) {
     html, body{
         height: 100%;
         padding: 0;
