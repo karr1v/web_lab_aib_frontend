@@ -32,6 +32,8 @@ var fruit = new Array('apple', 'strawberry', 'blueberry', 'raspberry', 'lemon');
                 case 'lemon':
                     console.log('lemon yellow')
                     break;
+                default:
+                    console.log('Unknown fruit');
             }
         }
 ```
