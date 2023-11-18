@@ -2,13 +2,14 @@ const redInput = document.getElementById('redInput');
 const greedInput = document.getElementById('greenInput');
 const blueInput = document.getElementById('blueInput');
 const paletteBox = document.getElementById('palette');
+let color;
 
 function updateColor(){
     const redValue = redInput.value;
     const greenValue = greenInput.value;
     const blueValue = blueInput.value;
-
-    paletteBox.style.backgroundColor = `rgb(${redValue}, ${greenValue}, ${blueValue})`;
+    color = `rgb(${redValue}, ${greenValue}, ${blueValue})`;
+    paletteBox.style.backgroundColor = color;
     
 }
 
