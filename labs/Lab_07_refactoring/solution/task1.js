@@ -1,6 +1,6 @@
 console.log('Task 1');
-var a = prompt('var one');
-var b = prompt('var two');
+let a = prompt('var one');
+let b = prompt('var two');
 if (a === b)
 console.log('equally');
 else
