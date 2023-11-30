@@ -35,14 +35,14 @@ creatButton.addEventListener("click", () => {
 
     if (countContainer >= maxContainer && existingContainer) {
         existingContainer.style.backgroundColor = color;
-        localStorage.setItem(newContainerId.toString(), color); // Сохраняем цвет в локальное хранилище
+        localStorage.setItem(newContainerId.toString(), color); 
     } else {
         const newContainer = document.createElement("div");
         newContainer.className = "newContainer";
         newContainer.id = countContainer.toString();
         newContainer.style.backgroundColor = color;
         block.appendChild(newContainer);
-        localStorage.setItem(countContainer.toString(), color); // Сохраняем цвет в локальное хранилище
+        localStorage.setItem(countContainer.toString(), color); 
     }
 
     countContainer++;
@@ -52,11 +52,11 @@ block.addEventListener("click", (event) => {
     const clickedBlock = event.target;
 
     if (clickedBlock.className === "newContainer") {
-        const savedColor = localStorage.getItem(clickedBlock.id); // Получаем сохраненный цвет по ID блока
+        const savedColor = localStorage.getItem(clickedBlock.id); 
 
         if (savedColor) {
             clickedBlock.style.backgroundColor = savedColor;
-            localStorage.setItem("savedColor", savedColor); // Обновляем основной сохраненный цвет в локальном хранилище
+            localStorage.setItem("savedColor", savedColor); 
         }
     }
 });
