@@ -1,0 +1,79 @@
+
+.counter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.count {
+  text-align: center;
+}
+
+.count div {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.count button {
+  padding: 5px 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+.post {
+  width: 60%;
+}
+
+.post div {
+  border: 1px solid rgb(128, 0, 255);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.post button {
+  
+  margin-top: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+
+.createPost {
+  width: 35%;
+}
+
+.createPost label,
+.createPost input,
+.createPost button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.createPost input {
+  width: calc(100% - 20px);
+  padding: 5px;
+}
+
+
+.tags {
+  margin-top: 20px;
+}
+
+.tags button {
+  margin: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: rgb(230, 204, 255);
+  border-radius: 10px;
+}
+
+.tags button.selected {
+  background-color: rgb(172, 146, 196);
+}
+
