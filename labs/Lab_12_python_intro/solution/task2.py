@@ -10,7 +10,6 @@ def fMed(n, x):
 
         if len(minH) > len(maxH):
             heapq.heappush(maxH, -heapq.heappop(minH))
-
         result -= maxH[0]
 
     return result
